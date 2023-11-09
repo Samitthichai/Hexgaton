@@ -30,11 +30,12 @@ import OptionsFreelance from './features/Options-freelance';
 import OptionsEnter from './features/Options-enter';
 import BasicExample from './features/Example';
 import Status from './features/Status';
-import HomeChat from './features/chatRoom';
+import HomeChat from './features/chatSystem/components/Homechat';
 import EditpictureProfile from './features/EditpictureProfile';
 import History from './features/History';
 import Donate from './features/Donate';
 import Forget from './features/Login-Register/Forget';
+
 function App() {
   const location = useLocation();
   const showNavbar = location.pathname !== '/login';
