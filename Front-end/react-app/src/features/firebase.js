@@ -1,7 +1,13 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+
+
+
+// const fs = require("fs")
+// fs.readFileSync( path.join(__dirname")
+// console.log(__dirname);
 
 const firebaseConfig = {
   apiKey: process.env.REACT_FIREBASE_APP_API_KEY,
@@ -12,6 +18,7 @@ const firebaseConfig = {
   messagingSenderId: process.env.REACT_FIREBASE_APP_MESSAGING_SENDER_ID,
   appId: process.env.REACT_FIREBASE_APP_APP_ID,
 };
+
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
